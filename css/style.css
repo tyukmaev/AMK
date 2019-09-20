@@ -1,0 +1,312 @@
+::selection {
+  background: #FFCC01;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #392525; 
+  background: #392525 url(../img/logotype.svg) no-repeat center;
+}
+.background {
+  position: fixed;
+  width: 0%;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+  overflow: hidden;
+  animation: w100 0.4s ease-in-out 1s forwards;
+  transition: all;
+}
+.background img {
+  width: 1600px;
+}
+.background.moved img {
+  margin: 0;
+  animation: m500 1s ease-in-out forwards;
+}
+#wrapper {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+a {
+  color: #FFF;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #FFCC01;
+  text-decoration: none;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 50px;
+}
+h2 {
+  float: left;
+  width: 370px;
+  margin: -8px 0 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.case {
+  float: right;
+  width: 800px;
+  min-height: 400px;
+  padding: 100px 100px 88px;
+  color: #FFF;
+  background: #564141;
+  opacity: 0;
+  animation: op100 0.4s ease-in-out 1.4s forwards;  
+}
+.case.left {
+  float: left;
+  width: 640px;
+  background: none;
+}
+.case.white {
+  color: #392525;
+  background: #FFF;
+}
+.case.white a {
+  float: right;
+  display: inline-block;
+  margin: 42px 0 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #392525;
+}
+.case.transparent {
+  width: 720px;
+  color: #FFF;
+  background: none;
+}
+
+
+
+
+#main {
+  width: 100%;
+  height: 800px;
+}
+#main a.logotype {
+  position: fixed;
+  display: block;
+  width: 133px;
+  height: 29px;
+  background: url(../img/logotype.svg) no-repeat center;
+}
+#main a.phone {
+  display: inline-block;
+  float: right;
+  margin-top: -10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+#main a.lang {
+  display: inline-block;
+  float: right;
+  margin: -10px 132px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+#main ul.menu {
+  float: left;
+  padding: 0;
+  margin: 68px 128px 0 0;
+  list-style: none;
+  transition: all 0.3s;
+  opacity: 1;
+}
+#main ul.menu.hide {
+  opacity: 1;
+}
+#main .fixmenu {
+  position: fixed;
+}
+#main ul.menu.second {
+  margin: 68px 0 0 0;
+}
+#main ul.menu li {
+  transition: all;
+}
+#main ul.menu li:hover {
+  color: #FFCC01;
+}
+#main ul.menu li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  cursor: pointer;
+}
+#main h1 {
+  margin: -12px 0 0 0;
+}
+#main span {
+  display: block;
+  float: left;
+  margin: 64px 135px 0 0;
+  line-height: 28px;
+}
+
+
+
+
+#create ul.tabs {
+  margin: 0;
+  padding: 25px 0 0 2px;
+  list-style: none;
+}
+#create ul.tabs li {
+  float: left;
+  width: 200px;
+  margin: 0 0 0 -1px;
+  line-height: 40px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #ddd9d9;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#create ul.tabs li:hover {
+  background: #ddd9d9;
+}
+#create ul.tabs li.active {
+  color: #FFF;
+  background: #564141;
+  border: 1px solid #564141;
+}
+#create ul.tabs li.active:hover {
+  background: #564141;
+}
+#create ul.tabs.semi li {
+  width: 300px;
+}
+#create h2 {
+  margin-top: -8px;
+}
+#create a {
+  margin-bottom: 6px;
+}
+#create .texture {
+  float: left;
+  width: 143px;
+  height: 60px;
+  margin: 0 9px 0 0;
+  cursor: pointer;
+}
+#create .texture em {
+  display: block;
+  width: 143px;
+  height: 60px;
+  border: 3px solid rgba(0,0,0,0);
+  transition: all 0.3s;
+}
+#create .texture:hover em {
+ border: 3px solid rgba(255,204,1,1); 
+}
+#create .selector {
+  width: 600px;
+  padding: 25px 0 0 1px;
+}
+#create .selector .texture:last-child {
+  margin: 0;
+}
+#create a.button {
+  display: block;
+  float: left;
+  padding: 0 50px;
+  margin: 50px 0 0 1px;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FFF;
+  background: #FFCC01;
+}
+#create a.button:hover {
+  background: #febf01;
+}
+#create .case.left.moved {
+  height: 597px;
+  background: #fbfbfb url(../img/texture-02-big.png) left top;
+}
+#create .case.left.second {
+  background: #fbfbfb url(../img/texture-03-big.png) left top;
+}
+#create .textureprev {
+  position: absolute;
+  margin: 0 0 0 640px;
+  transition: all 0.3s;
+}
+#create .textureprev.moved {
+  margin: 0;
+}
+
+
+
+
+
+
+#vapor img.marg {
+  margin: 25px 0 45px -100px;
+}
+
+p {
+  padding: 30px 0 0;
+}
+
+
+
+
+
+
+
+
+#spacer {
+  height: 800px;
+}
+
+
+
+
+@keyframes w100 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes op100 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes m500 {
+  from {
+    margin: 0;
+  }
+  to {
+    margin: 0 0 0 -300px;
+  }
+}
